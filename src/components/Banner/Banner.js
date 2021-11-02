@@ -1,5 +1,6 @@
 import { Container, makeStyles, Typography } from "@material-ui/core";
 import React from "react";
+import { mainStayles } from "../../generalStyles";
 import Carousel from "./Carousel";
 
 const useStyles = makeStyles(() => ({
@@ -34,7 +35,8 @@ function Banner() {
             style={{
               fontWeight: "bold",
               marginBottom: 15,
-              fontFamily: "Montserrat"
+              fontFamily: "Montserrat",
+              color: mainStayles.mainColor
             }}
           >
             Crypto Market
@@ -42,9 +44,12 @@ function Banner() {
           <Typography
             variant="subtitle2"
             style={{
-              color: "darkgray",
+              display: "inline",
+              color: "black",
+              background: "white",
               textTransform: "capitalize",
-              fontFamily: "Montserrat"
+              fontFamily: "Montserrat",
+              fontWeight: "bold"
             }}
           >
             Get All Informations about your favorite Crypro currency

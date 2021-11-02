@@ -7,10 +7,10 @@ function SelectButton({ children, selected, onClick }) {
     selectedButton: {
       border: `1px solid ${mainStayles.mainColor}`,
       borderRadius: 5,
-      padding: 10,
-      paddingLeft: 20,
-      paddingRight: 20,
+      textAlign: "center",
       fontFamily: "Montserrat",
+      paddingTop: 10,
+      paddingBottom: 10,
       cursor: "pointer",
       backgroundColor: selected ? mainStayles.mainColor : "",
       color: selected ? "black" : "",

@@ -35,7 +35,6 @@ function CoinsTable() {
     const { data } = await axios.get(CoinList(currency));
     setCoins(data);
     setLoading(false);
-    console.log("coins : ", coins);
   };
 
   useEffect(() => {
@@ -82,12 +81,17 @@ function CoinsTable() {
       <Container style={{ textAlign: "center" }}>
         <Typography
           variant="h4"
-          style={{ margin: 18, fontFamily: "Montserrat" }}
+          style={{
+            margin: 18,
+            fontFamily: "Montserrat",
+            color: mainStayles.mainColor,
+            fontWeight: "bold"
+          }}
         >
-          Cryptocurrency Prices by Market Cap
+          Coins Prices by Market Cap
         </Typography>
         <TextField
-          label="Search for your Crypto Currnecy..."
+          label="Search ..."
           variant="outlined"
           style={{ marginBottom: 20, width: "100%" }}
           onChange={(e) => setSearch(e.target.value)}

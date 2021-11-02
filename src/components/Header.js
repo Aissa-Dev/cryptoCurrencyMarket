@@ -49,7 +49,7 @@ function Header() {
               className={classes.title}
               variant="h6"
             >
-              Crypto Market
+              Cryptos
             </Typography>
             <Select
               variant="outlined"

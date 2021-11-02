@@ -1,4 +1,4 @@
 export const mainStayles = {
-  mainColor: "gold",
+  mainColor: "#23D997",
   bgPrimaryColor: "#14161a"
 };

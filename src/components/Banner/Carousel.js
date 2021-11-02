@@ -1,4 +1,4 @@
-import { makeStyles } from "@material-ui/core";
+import { Container, makeStyles } from "@material-ui/core";
 import axios from "axios";
 import React, { useState, useEffect } from "react";
 import AliceCarousel from "react-alice-carousel";
@@ -32,7 +32,6 @@ function Carousel() {
   const fetchTrendingCoins = async () => {
     const { data } = await axios.get(TrendingCoins(currency));
     setTrending(data);
-    console.log(data);
   };
   useEffect(() => {
     fetchTrendingCoins();
@@ -76,18 +75,23 @@ function Carousel() {
     }
   };
   return (
-    <div className={calsses.carousel}>
-      <AliceCarousel
-        mouseTracking
-        infinite
-        autoPlayInterval={1000}
-        animationDuration={1500}
-        disableDotsControls
-        disableButtonsControls
-        responsive={responsive}
-        items={items}
-        autoPlay
-      />
+    <div
+      className={calsses.carousel}
+      style={{ marginTop: 80, marginBottom: 60 }}
+    >
+      <Container>
+        <AliceCarousel
+          mouseTracking
+          infinite
+          autoPlayInterval={1000}
+          animationDuration={1500}
+          disableDotsControls
+          disableButtonsControls
+          responsive={responsive}
+          items={items}
+          autoPlay
+        />
+      </Container>
     </div>
   );
 }
