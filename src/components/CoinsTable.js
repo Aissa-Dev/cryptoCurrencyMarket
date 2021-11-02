@@ -21,7 +21,7 @@ import { useHistory } from "react-router-dom";
 import { CoinList } from "../apiConfig/api";
 import { CryptoState } from "../CryptoContext";
 import { mainStayles } from "../generalStyles";
-import { numberWithCommas } from "./Banner/Carousel";
+import { numberWithCommas } from "./Carousel";
 
 function CoinsTable() {
   const { currency, symbol } = CryptoState();

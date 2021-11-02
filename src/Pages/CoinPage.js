@@ -6,7 +6,7 @@ import { SingleCoin } from "../apiConfig/api";
 import CoinInfo from "../components/CoinInfo";
 import ReactHtmlParser from "react-html-parser";
 import { CryptoState } from "../CryptoContext";
-import { numberWithCommas } from "../components/Banner/Carousel";
+import { numberWithCommas } from "../components/Carousel";
 import { mainStayles } from "../generalStyles";
 function CoinPage() {
   const { symbol, currency } = CryptoState();

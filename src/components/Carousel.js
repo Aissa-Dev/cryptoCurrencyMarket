@@ -3,8 +3,8 @@ import axios from "axios";
 import React, { useState, useEffect } from "react";
 import AliceCarousel from "react-alice-carousel";
 import { Link } from "react-router-dom";
-import { TrendingCoins } from "../../apiConfig/api";
-import { CryptoState } from "../../CryptoContext";
+import { TrendingCoins } from "../apiConfig/api";
+import { CryptoState } from "../CryptoContext";
 
 const useStyles = makeStyles(() => ({
   carousel: {
