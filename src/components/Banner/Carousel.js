@@ -22,9 +22,9 @@ const useStyles = makeStyles(() => ({
   }
 }));
 
-function numberWithCommas(x) {
+export const numberWithCommas = (x) => {
   return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-}
+};
 function Carousel() {
   const [trending, setTrending] = useState([]);
   const calsses = useStyles();
@@ -36,6 +36,7 @@ function Carousel() {
   };
   useEffect(() => {
     fetchTrendingCoins();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [currency]);
 
   const items = trending.map((coin) => {
